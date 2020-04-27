@@ -1,0 +1,38 @@
+.tab {
+	display: flex;
+	background: #D6FF79;
+	padding: 10px 10px 0 10px;
+}
+
+.item {
+	text-align: center;
+	background: #E0FF99;
+	flex: 0 0 25%;
+}
+
+.item p {
+	opacity: 0.5;
+}
+
+.item.active {
+	background: white;
+	color: black; 
+}
+
+.item:hover {
+	background: #B1D181;
+	color: black; 
+}
+
+.item h3 {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.item:first-child {
+	border-radius: 15px 0 0 0;
+}
+
+.item:last-child {
+	border-radius: 0 15px 0 0;
+}

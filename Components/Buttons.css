@@ -1,0 +1,105 @@
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.button-Twitter {
+	background: #dd2c00;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 15px 25px;
+	font-size: 18px;
+	border: 1px solid #dd2c00;
+}
+
+.button-Twitter:hover {
+	text-decoration: none;
+	border: 1px solid #dd2c00;
+	color: #dd2c00;
+	background: white;
+}
+
+.button-Google {
+	background-color: #00bcd4;
+	color: white;
+	padding: 15px 30px;
+	font-size: 18px;
+}
+
+.button-Google:hover {
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.button-Medium {
+	background: white;
+	color: #687466;
+	border-radius: 50px;
+	font-size: 18px;
+	border: 1px solid;
+	border-color: #dee3e2;
+	padding: 15px 20px;
+}
+
+.button-Medium:hover {
+	text-decoration: none;
+	color: #687466;
+	border: 2px solid;
+	font-weight: bolder;
+}
+
+.button-treehouse {
+	background: white;
+	border: 1px solid;
+	color: #2D7734;
+	border-color: #2D7734;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.button-treehouse:hover {
+	text-decoration: none;
+	color: #2D7734;
+}
+
+#item {
+	background-color: white;
+	color: #512b58;
+	padding: 15px 30px;
+	border: 2px solid #512b58;
+	border-radius: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	box-shadow: 2px 2px 2px #2c003e;
+}
+
+.menu {
+	position: relative;
+	display: inline-block;
+}
+
+#submenu {
+	display: none;
+	position: absolute;
+	background-color: white;
+	color: #512b58;
+	padding: 15px 30px;
+	border: 2px solid #512b58;
+	width: 150px;
+	box-shadow: 2px 2px 2px #2c003e;
+	border-radius: 15px;
+}
+
+#submenu a {
+	text-decoration: none;
+	display: block;
+	color: #512b58;
+}

@@ -1,0 +1,23 @@
+@import url("Components/Buttons.css");
+@import url("Components/Avatars.css");
+@import url("Components/Dropdown.css");
+@import url("Components/Card.css");
+@import url("Components/Badge.css");
+@import url("Components/Banner.css");
+@import url("Components/Tabulation.css");
+@import url("Components/List.css");
+@import url("Components/Like.css");
+@import url("Components/Epicurious.css");
+
+body {
+	font-family: "Open Sans", "Helvetica", "sans-serif";
+	padding: 30px;
+	margin-bottom: 500px;
+}
+h1, h2, h3 {
+	font-family: "Montserrat", "sans-serif";
+}
+
+h2 {
+	margin-top: 50px;
+}
