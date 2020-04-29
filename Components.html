@@ -10,9 +10,11 @@
 
 		<title>COMPONENT DESIGN</title>
 
-		<script src="https://kit.fontawesome.com/2922d713ad.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/2922d713ad.js" crossorigin="anonymous"></script>		
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
 		<link rel="stylesheet" type="text/css" href="style-component.css">
-
+		
 	</head>
 	<body>
 		<div class="container">
@@ -182,10 +184,25 @@
 						<p class="prod-synop">According to a lot of studies, ...</p>
 					</div>
 				</a>
-		</div>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    	<script type="text/javascript" src="script.js"></script>
+
+			<h2>Map</h2>
+			
+				<div id='map' style='width: 400px; height: 300px;'></div>
+				<script>
+					mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jpc3Byb2xjZSIsImEiOiJjazlsYW4xeXkwMnN0M2hzMXo2M2d1MHpsIn0.HXJ2L8en80eBxzQh-V8cYw';
+					var map = new mapboxgl.Map({
+						container: 'map',
+						style: 'mapbox://styles/mapbox/streets-v9',
+						center: [1, 40],
+						zoom: 9
+					});
+
+					map.addControl(new mapboxgl.NavigationControl());
+				</script>
+
+				<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		    	<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
